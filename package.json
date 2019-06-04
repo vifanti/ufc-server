@@ -40,7 +40,6 @@
     "@types/mongoose": "^5.5.0"
   },
   "engines": {
-    "node": "8.10.0",
-    "npm": "3.5.2"
+    "node": "8.10.0"
   }
 }
