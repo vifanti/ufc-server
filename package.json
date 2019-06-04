@@ -31,7 +31,8 @@
     "jsonwebtoken": "^8.2.2",
     "mongoose": "^5.4.7",
     "nodemon": "^1.18.9",
-    "typeorm": "0.2.12"
+    "typeorm": "0.2.12",
+    "typescript": "^3.5.1"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -39,6 +40,7 @@
     "@types/mongoose": "^5.5.0"
   },
   "engines": {
-    "node": "8.10.0"
+    "node": "8.10.0",
+    "npm": "3.5.2"
   }
 }
