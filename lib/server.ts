@@ -2,7 +2,8 @@ import app from './app';
 import * as https from 'https';
 import * as http from 'http';
 import * as fs from 'fs';
-const PORT = 3000;
+
+var PORT = process.env.PORT || 8080;
 
 
 // ## configurações https
