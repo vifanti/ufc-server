@@ -1,7 +1,6 @@
 import app from './app';
 import * as https from 'https';
 import * as http from 'http';
-import * as fs from 'fs';
 
 var PORT = process.env.PORT || 8080;
 
@@ -14,8 +13,6 @@ var PORT = process.env.PORT || 8080;
 
 // https.createServer(httpsOptions, app).listen(PORT, () => {
 
-
-http.createServer(app).listen(PORT, () => {
-
+app.listen(PORT, () => {
     console.log('Express server listening on port ' + PORT);
 })
