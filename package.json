@@ -6,7 +6,7 @@
   "scripts": {
     "build-ts": "tsc",
     "postinstall": "npm run build-ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest lib",
     "build": "tsc",
     "dev": "ts-node ./lib/server.ts",
     "start": "npm run serve",
@@ -37,9 +37,26 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.4",
-    "@types/mongoose": "^5.5.0"
+    "@types/mongoose": "^5.5.0",
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2"
   },
   "engines": {
     "node": "8.10.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
