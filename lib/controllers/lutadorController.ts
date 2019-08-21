@@ -3,7 +3,7 @@ import { LutadorSchema } from '../models/lutadorModel';
 import { Request, Response } from 'express';
 import { CalculoCategoria } from './calculo-categoria'
 
-const Lutador = mongoose.model('Lutador', LutadorSchema);
+const Lutador = mongoose.model('Lutadores', LutadorSchema);
 const calculoCategoria: CalculoCategoria = new CalculoCategoria() 
 export class LutadorController{
     
